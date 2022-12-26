@@ -10,6 +10,7 @@ function App() {
   const [filteredCertificates, setFilteredCertificates] = useState([]);
   const [currentCertificates, setCurrentCertificates] = useState("");
   const [expiredFiltered, setExpiredFiltered] = useState(false);
+  const [message, setMessage] = useState('Try to search for something');
 
   const IsExpired = expireDate => {
     const MinutesBeforeNow = moment().diff(expireDate, 'minutes');
@@ -42,6 +43,7 @@ function App() {
     setExpiredFiltered(false)
     setCertificates(data);
     setFilteredCertificates(data);
+    setMessage('No result found')
   };
   const setDetails = (certificate) => {
     setCurrentCertificates(certificate);
@@ -59,12 +61,13 @@ function App() {
               setDetails={setDetails}
               filterExpired={filterExpired}
               expiredFiltered={expiredFiltered}
+              message={message}
             />
           }
         ></Route>
         <Route
           path="/details"
-          element={<Detail currentCertificates={currentCertificates} />}
+          element={<Detail currentCertificates={currentCertificates} message={message} />}
         />
       </Routes>
     </BrowserRouter>

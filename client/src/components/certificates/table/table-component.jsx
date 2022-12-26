@@ -48,7 +48,7 @@ function Table(props) {
                     </thead>
                     <tfoot></tfoot>
                 </table>
-                <NotFound />
+                <NotFound message={props.message} />
             </div>
         )
     );

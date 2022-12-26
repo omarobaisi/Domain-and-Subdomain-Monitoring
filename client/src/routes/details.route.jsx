@@ -5,7 +5,7 @@ function Detail(props) {
 
     return (
         <div className="Details">
-            <Details certificate={props.currentCertificates}/>
+            <Details certificate={props.currentCertificates} message={props.message}/>
         </div>
     );
 }

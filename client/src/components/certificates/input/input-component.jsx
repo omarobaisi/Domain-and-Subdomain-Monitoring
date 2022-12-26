@@ -13,8 +13,8 @@ function Input(props) {
 
     return (
         <form className={styles.form} onSubmit={fetchCertificate}>
-            <input type="text" name='domain' className={styles.input} required/>
-            <button className={styles.btn}><i className="fa fa-search" aria-hidden="true"></i></button>
+            <input type="text" name='domain' className={styles.input} placeholder='Enter domain' required/>
+            <button className={styles.btn}><i className={`fa fa-search ${styles.search}`} aria-hidden="true"></i></button>
         </form>
     );
 }

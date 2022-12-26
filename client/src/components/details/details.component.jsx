@@ -49,7 +49,7 @@ function Details(props) {
                 </div>
             ) : (
                 <div>
-                    <NotFound />
+                    <NotFound message={props.message} />
                     <div className={styles.goBackDiv}><Link className={styles.link} to={`/`}><button className={styles.goBack}>Go back</button></Link></div>
                 </div>
             )}

@@ -7,9 +7,10 @@
 
 .input {
   outline: none;
-  height:40px;
+  height:42px;
   width:90%;
   border:1px #FFCC00 solid;
+  padding: 0 10px;
 }
 
 .btn {
@@ -24,4 +25,8 @@
   border-top:1px solid #FFCC00;
   border-bottom:1px solid #FFCC00;
   border-right:1px solid #FFCC00;
+}
+
+.search {
+  font-size: 20px;
 }
