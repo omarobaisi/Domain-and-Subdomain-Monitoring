@@ -1,0 +1,28 @@
+.info {
+    margin: 30px 20%;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-bottom: 2px solid #FFCC00;
+}
+
+.goBackDiv {
+    text-align: center;
+    margin-top: 30px;
+}
+.goBack {
+    background-color:#FFCC00;
+    height:44px;
+    width:9%;
+    border:1px transparent solid;
+    transition: 200ms ease-in-out;
+}
+.goBack:hover {
+    background-color:white;
+    border:1px solid #FFCC00;
+}
+.link {
+    text-decoration: none;
+}

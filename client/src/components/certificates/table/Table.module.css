@@ -1,0 +1,23 @@
+.result {
+    margin: 30px 50px;
+}
+.table {
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border: 2px solid #FFCC00;
+}
+.tableEdits {
+    display: flex;
+    justify-content: space-between;
+}
+.th {
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+
+
+.filterDiv {
+    display: flex;
+    align-items: center;
+}
